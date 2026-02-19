@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Mission Control
+
+A modern Next.js starter with a full component library, ready to ship.
+
+## Stack
+
+- **[Next.js 16](https://nextjs.org/)** — App Router, TypeScript
+- **[Tailwind CSS v4](https://tailwindcss.com/)** — Utility-first styling
+- **[shadcn/ui](https://ui.shadcn.com/)** — 57 accessible, composable components
+- **[pnpm](https://pnpm.io/)** — Fast, efficient package manager
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see it running.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Components
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+All shadcn/ui components are available under `components/ui/`:
 
-## Learn More
+| Component | Component | Component |
+|-----------|-----------|-----------|
+| Accordion | Alert | Alert Dialog |
+| Aspect Ratio | Avatar | Badge |
+| Breadcrumb | Button | Button Group |
+| Calendar | Card | Carousel |
+| Chart | Checkbox | Collapsible |
+| Combobox | Command | Context Menu |
+| Dialog | Drawer | Dropdown Menu |
+| Empty | Field | Form |
+| Hover Card | Input | Input Group |
+| Input OTP | Item | Kbd |
+| Label | Menubar | Navigation Menu |
+| Native Select | Pagination | Popover |
+| Progress | Radio Group | Resizable |
+| Scroll Area | Select | Separator |
+| Sheet | Sidebar | Skeleton |
+| Slider | Sonner | Spinner |
+| Switch | Table | Tabs |
+| Textarea | Toggle | Toggle Group |
+| Tooltip | | |
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+mission-control/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+├── components/
+│   └── ui/          # shadcn/ui components
+├── hooks/
+│   └── use-mobile.ts
+├── lib/
+│   └── utils.ts
+└── public/
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Scripts
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+pnpm dev        # Start development server
+pnpm build      # Build for production
+pnpm start      # Start production server
+pnpm lint       # Run ESLint
+```
